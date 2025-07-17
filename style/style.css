@@ -40,7 +40,9 @@ body{
 }
 
 
-
+.hidden{
+    display: none;
+}
 
 
 
@@ -177,6 +179,31 @@ body{
 }
 
 
+/* Facts section is designed here */
+.facts-section h2{
+    margin-bottom: 20px;
+}
+
+.fact-card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    padding: 20px 5vw;
+    gap: 2vw;
+}
+
+.fact-card{
+    text-align: center;
+    border: 1px solid #FF900E;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.fact-card h3{
+    color: #424242;
+    font-size: 2rem;
+    margin: 10px 0;
+}
 
 
 @media screen and (max-width:576px) {
@@ -197,6 +224,11 @@ body{
 
     .more-features-image-container button{
         bottom: -20px;
+    }
+
+    .fact-card-container{
+        grid-template-columns: repeat(1,1fr);
+        gap: 5vh;
     }
 }
 
