@@ -84,6 +84,49 @@
 }
 
 
+/* Features section design */
+.features-section{
+    display: flex;
+    gap:  5vw;
+}
+
+.features-image-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    flex: 1;
+    gap: 5px;
+}
+
+.features-image-container img{
+    width: 100%;
+}
+
+.features-description-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3vh;
+}
+
+.features-description-container h2{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.features-description-container h2 :first-child{
+    font-weight: 700;
+}
+
+.features-description-container h2 :last-child{
+    color: #FF900E;
+    font-weight: 700;
+}
+
+
+
+
+
 
 
 
