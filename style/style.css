@@ -205,6 +205,24 @@ body{
     margin: 10px 0;
 }
 
+/* section about the sponsor is added here */
+.sponsor-header{
+    padding: 50px 20%;
+    text-align: center;
+}
+.sponsor-logo-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+    gap: 5vw;
+
+}
+
+.sponsor-logo img{
+    filter: grayscale(100%);
+    width: 70%;
+}
+
 
 @media screen and (max-width:576px) {
     .navbar ul{
@@ -230,5 +248,17 @@ body{
         grid-template-columns: repeat(1,1fr);
         gap: 5vh;
     }
+
+    .sponsor-header{
+        padding: 0%;
+    }
+
+    .sponsor-logo-container{
+        grid-template-columns: 1fr;
+        max-width: 60%;
+        margin: 0 auto;
+    }
+
+    
 }
 
